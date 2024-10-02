@@ -10,9 +10,12 @@ body{
 
 /* Navbar section */
 .navbar{
-    /* position:sticky;
+    position:sticky;
     top: 0;
-    z-index: 1000; */
+    background-color: rgba(34,34,34,0.25);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #333;
+    /* z-index: 1000; */
 }
 
 .navbar-container{
@@ -61,4 +64,16 @@ body{
 
 .nav-items-link:hover{
     color: #3b82f6;
+}
+
+/* navbar responsive */
+
+@media (max-width:873px){
+    .navbar-container{
+        display: block;
+    }
+
+    .nav-items-container{
+        padding: 0;
+    }
 }
