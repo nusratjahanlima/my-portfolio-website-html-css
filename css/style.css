@@ -75,7 +75,10 @@ body{
     min-height: 80vh;
 }
 
-.hero-image{
+.hero-image,
+.resume-image,
+.certificate-logo,
+.project-image{
     max-width: 100%;
     height: auto;
     margin: 0 auto;
@@ -243,7 +246,8 @@ body{
     height: 3rem;
 }
 
-.certificate-name{
+.certificate-name,
+.project-name{
     color: #f5f5f5;
     font-size: 14px;
     line-height: 20px;
@@ -253,7 +257,9 @@ body{
 
 .certificate-org-name,
 .certificate-date,
-.certificate-link{
+.certificate-link,
+.project-description,
+.project-link{
     font-size: 12px;
     line-height: 16px;
     color: #777;
@@ -327,6 +333,92 @@ body{
     background-color: rgb(59 130 246);
 }
 
+/* Porfolio */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap:2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.project-list{
+    margin-top: 2rem;
+    border: 1px solid #333;
+    border-radius: 1rem;
+}
+
+.project-list:hover{
+    background-color: #333;
+}
+
+.project-details{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.project-image{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.project-name,
+.project-description,
+.project-link{
+    padding-left: 1rem;
+}
+
+/* Contact */
+.contact-info-container{
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-info-container a,
+.contact-info-container p{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 1rem;
+}
+
+.input-field{
+    background-color: transparent;
+    border: 2px solid #555;
+    border-radius: 2px;
+    width: 90%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.contact-button{
+    background-color: transparent;
+    border: 2px solid #3bB2f6;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.contact-button:hover{
+    background-color: #3bB2f6;
+    cursor: pointer;
+}
 
 
 
